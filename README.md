@@ -21,34 +21,34 @@ real-time-chat app useing technology like that
 
              Add your new API KEY to the script inside src/firebase.js
         import { initializeApp } from "firebase/app";
-import {
-  browserLocalPersistence,
-  getAuth,
-  setPersistence,
-} from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
-
-const firebaseConfig = {
- apiKey: "YOUR_API_KEY",
- authDomain: "YOUR_AUTH_DOMAIN",
- projectId: "YOUR_PROJECT_ID",
- storageBucket: "YOUR_STORAGE_BUCKET",
- messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
- appId: "YOUR_APP_ID",
-};
-
-const app = initializeApp(firebaseConfig);
-
-export const auth = getAuth(app);
-export const db = getFirestore(app);
-
-setPersistence(auth, browserLocalPersistence)
- .then(() => {
-    console.log("Firebase auth persistence set to localStorage.");
- })
- .catch((error) => {
-    console.error("Error setting Firebase persistence:", error);
- });
+            import {
+              browserLocalPersistence,
+              getAuth,
+              setPersistence,
+            } from "firebase/auth";
+            import { getFirestore } from "firebase/firestore";
+            
+            const firebaseConfig = {
+             apiKey: "YOUR_API_KEY",
+             authDomain: "YOUR_AUTH_DOMAIN",
+             projectId: "YOUR_PROJECT_ID",
+             storageBucket: "YOUR_STORAGE_BUCKET",
+             messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+             appId: "YOUR_APP_ID",
+            };
+            
+            const app = initializeApp(firebaseConfig);
+            
+            export const auth = getAuth(app);
+            export const db = getFirestore(app);
+            
+            setPersistence(auth, browserLocalPersistence)
+             .then(() => {
+            console.log("Firebase auth persistence set to localStorage.");
+             })
+             .catch((error) => {
+                console.error("Error setting Firebase persistence:", error);
+             });
 
 
          
