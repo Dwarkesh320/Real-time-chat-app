@@ -1,0 +1,107 @@
+{
+    "users": [
+            {
+                "id": 1,
+                "createdAt": "1 January 2023 at 12:00:00 UTC+5:30",
+                "displayName": "Preet",
+                "email": "Preetpatel213@gmail.com",
+                "lastSeen": "2 January 2023 at 12:31:05 UTC+5:30",
+                "mobileNo":"+91 9924123456",
+                "photoURL": "https://img.freepik.com/premium-photo/color-user-icon-white-background_961147-8.jpg?ga=GA1.1.1595050714.1744354264&semt=ais_hybrid&w=740",
+                "status": "Ofline" ,
+                "about": "i am urgent call",
+                "uid": "user1"
+            },
+            {
+                "id": 2,
+                "createdAt": "1 January 2023 at 12:00:00 UTC+5:30",
+                "displayName": "Dwarkesh patel",
+                "email": "dwarkeshpatel616@gmail.com",
+                "lastSeen": "2 January 2023 at 16:31:00 UTC+5:30",  
+                "mobileNo": "+91 7859949230",
+                "photoURL": "https://img.freepik.com/premium-vector/man-with-red-shirt-that-says-he-is-character_1230457-35003.jpg?ga=GA1.1.1595050714.1744354264&semt=ais_hybrid&w=740",
+                "status": "Ofline",
+                "about": "I am busy call ",
+                "uid": "user2"
+            },
+            {
+                "id": 3,
+                "createdAt": "1 february 2023 at 12:15:00 UTC+5:30",
+                "displayName": "Malay",
+                "email": "Malayshah234@gmail.com",
+                "lastSeen": "2 January 2023 at 12:40:00 UTC+5:30",
+                "mobileNo": "+91 9099468392",
+                "photoURL": "https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-174669.jpg?ga=GA1.1.1595050714.1744354264&semt=ais_hybrid&w=740",
+                "about": "Ofice work",
+                "uid": "user3"
+            },
+            {
+                "id": 4,
+                "createdAt": "1 March 2023 at 12:00:00 UTC+5:30",
+                "displayName": "Rahul sain",
+                "email": "Rahulsain145@gmail.com",
+                "lastSeen": "2 January 2023 at 13:00:00 UTC+5:30",
+                "mobileNo": "+91 9091823245",
+                "photoURL": "https://img.freepik.com/premium-vector/portrait-chinese-handsome-boy_684058-2112.jpg?ga=GA1.1.1595050714.1744354264&semt=ais_hybrid&w=740",
+                "status": "Ofline",
+                "about": "I am using this app",
+                "uid": "user4"
+            },
+            {
+                "id": 5,
+                "createdAt": "1 April 2023 at 01:32:36 UTC+5:30",
+                "displayName": "gopal",
+                "email": "Gopalpatel244@gmail.com",
+                "lastSeen": "2 April 2023 at 13:30:00 UTC+5:30",
+                "mobileNo": "+91 9638505707",
+                "photoURL": "https://img.freepik.com/premium-photo/memoji-handsome-asian-guy-chinese-man-white-background-emoji-cartoon-character_826801-7430.jpg?ga=GA1.1.1595050714.1744354264&semt=ais_hybrid&w=740",
+                "about":"about my self",
+                "uid": "user5"
+            },
+            {
+                "id":6,            
+                "createdAt": "1 May 2023 at 15:00:00 UTC+5:30",
+                "displayName": "Nancy trivedi",
+                "email": "Nancydesai256@gmail.com",
+                "lastSeen": "2 May 2023 at 15:30:00 UTC+5:30",
+                "mobileNo": "+91 7859020218",
+                "photoURL": "https://img.freepik.com/free-vector/woman-floral-traditional-costume_1308-176159.jpg?ga=GA1.1.1595050714.1744354264&semt=ais_hybrid&w=740",
+                "about":"i am urgent call",
+                "uid": "user6"
+            },
+            {
+                "id": 7,
+                "createdAt": "2 May 2023 at 18:15:00 UTC+5:30",
+                "displayName": "Amisha",
+                "email": "Amishasoni234@gmail.com",
+                "lastSeen": "3 May 2023 at 19:04:00 UTC+5:30",
+                "mobileNo": "+91 9734567822",
+                "photoURL": "https://img.freepik.com/free-vector/traditional-indian-woman-portrait_1308-175856.jpg?ga=GA1.1.1595050714.1744354264&semt=ais_hybrid&w=740",
+                "about":"I am using this app",
+                "uid": "user7"
+                
+            },
+            {
+                "id": 8,
+                "createdAt": "1 January 2024 at 12:00:00 UTC+5:30",
+                "displayName": "Ridhi Patel",
+                "email": "Ridhipatel345@gmail.com",
+                "lastSeen": "2 February 2024 at 12:30:00 UTC+5:30",
+                "mobileNo": "+91 9513245231",
+                "photoURL": "https://img.freepik.com/free-psd/3d-illustration-person-with-long-hair_23-2149436197.jpg?ga=GA1.1.1595050714.1744354264&semt=ais_hybrid&w=740",
+                 "about":"i am waiting for your call",
+                "uid": "user8"
+            },
+            {
+                "id":9,
+                "createdAt":"1 January 2025 at 00:10:03 UTC+5:30",
+                "displayName":"Dhaval shah",
+                "email":"dhavalshah234@gmail.com",
+                "lastSeen":"2 February 2025 at 13:48:06 UTC+5:30",
+                "mobileNo":"9924044567",
+                "photoURL":"https://img.freepik.com/free-vector/young-man-with-glasses-avatar_1308-175763.jpg?ga=GA1.1.1595050714.1744354264&semt=ais_hybrid&w=740",
+                "about":"i am always travel flight",
+                "uid":"user9"
+            }
+    ]
+}

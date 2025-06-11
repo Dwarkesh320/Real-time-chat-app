@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .audioContainer {
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    border: 1px solid rgb(119, 216, 234);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: rgb(119, 216, 234);
+  }
+  
+  .hangUpButton {
+    background-color: #f0f0f0;
+    color: black;
+    border: 1px solid #c82333;
+    border-radius: 5px;
+    padding: 10px 15px;
+
+  }
+  
+  .hangUpButton:hover {
+    background-color: #c82333;
+    color: white;
+  }
