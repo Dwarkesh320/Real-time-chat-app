@@ -19,7 +19,7 @@ real-time-chat app useing technology like that
    -CSS3
          ## used icons React-icons weblink :- https://react-icons.github.io
 
-             Add your new API KEY to the script inside src/firebase.js
+ ##Add your new API KEY to the script inside src/firebase.js
         import { initializeApp } from "firebase/app";
             import {
               browserLocalPersistence,
