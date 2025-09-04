@@ -9,6 +9,7 @@ import '../styles/ChatRoom.css';
 import { useNavigate, } from 'react-router-dom';
 import { RiRadioButtonLine } from "react-icons/ri";
 import EmojiPicker from "emoji-picker-react";
+import { MdOutlineEmojiEmotions } from "react-icons/md";
 
 //icons//
 import { AiOutlineUser } from "react-icons/ai";    
@@ -18,7 +19,7 @@ import { CiVideoOn } from "react-icons/ci";
 import { IoMdMore } from "react-icons/io";
 import {LuSend} from "react-icons/lu";
   //buttons//
- import { Dropdown,Button } from 'antd';
+ import { Dropdown,Button, message } from 'antd';
 //import userProfile from './userProfile';
 import {Menu,MenuHandler,MenuList,MenuItem,} from "@material-tailwind/react";
 import { MdBlockFlipped } from "react-icons/md";
@@ -44,7 +45,7 @@ function ChatRoom({ user }) {
   const dummy = useRef();
   const navigate = useNavigate();
   const { userId } = useParams(usersData.users.id);
-
+const [showEmojiPicker, setShowEmojiPicker] = useState(false);
  // const [isOpen, setisOpen] = useState(false);
   //const toggleMenu = () => setisOpen(!isOpen);
 
@@ -310,6 +311,11 @@ function ChatRoom({ user }) {
   };
 
 
+  const handleEmojiClick = (emojiData) => {
+  setNewMessage(prev => prev + emojiData.emoji);
+  messageInputRef.current?.focus();
+};
+
 
      
       
@@ -407,17 +413,17 @@ function ChatRoom({ user }) {
                       mount: { y: 0 },
                       unmount: { y: 25 },
                     }} >
-                    <MenuHandler className=" text-white " >
+                    <MenuHandler className=" text-white rounded-2xl border-black " >
                       <IoMdMore className='font-auto border-none' style={{fontSize:"30px"}}/>
                     </MenuHandler>
                     
-                    <MenuList className='bg-white w-40 border-none ml-4 p-2.5 ' >
+                    <MenuList className=' w-40  ml-4 p-2.5 ' >
                            
                       {
                         items.map((item) => (
-                          <MenuItem key={item.key} onClick={item.onClick} className="bg-black text-white hover:bg-[#075e54] m-2 hover:border-none" style={{border:"none"}}>
+                          <MenuItem key={item.key} onClick={item.onClick} className="bg-black border-0 text-white hover:bg-[#075e54] m-2 hover:border-none " style={{border:"none",borderRadius:"5px"}}>
                             <p></p>
-                           <Link to=""> <p className='hover:bg-[#075e54] w-full z-30 rounded-none'>{item.icons} {item.label}</p>
+                           <Link to=""> <p className='hover:bg-[#075e54] w-full z-30 '>{item.icons} {item.label}</p>
                           
                            </Link>
                            
@@ -445,19 +451,39 @@ function ChatRoom({ user }) {
 
               <ChatMessages messages={messages} currentUser={user} />
 
-              <form className="message-form" onSubmit={handleSendMessage}>
-                <input
-                  type="text" 
-                  value={newMessage}
-                  onChange={handleTyping}
-                  placeholder="Type a message..."
-                  ref={messageInputRef}
-                  required
-                />
-                  
-
-                <button type="submit"><LuSend /></button>
-              </form>
+           <form className="message-form" onSubmit={handleSendMessage}>
+                   <div className="message-input-container">
+                        <button 
+                          type="button" 
+                          className="emoji-button"
+                          onClick={() => setShowEmojiPicker(!showEmojiPicker)}
+                        >
+                          <MdOutlineEmojiEmotions />
+                         </button>
+    
+                      {showEmojiPicker && (
+                        <div className="emoji-picker-wrapper">
+                          <EmojiPicker 
+                            onEmojiClick={handleEmojiClick}
+                            width={300}
+                            height={350}
+                            previewConfig={{ showPreview: false }}
+                          />
+                        </div>
+                      )}
+    
+                    <input
+                      type="text" 
+                      value={newMessage}
+                      onChange={handleTyping}
+                      placeholder="Type a message..."
+                      ref={messageInputRef}
+                      required
+                    />
+    
+                  <button type="submit"><LuSend /></button>
+                </div>
+            </form>
             </>
           ) : (
             <div className="no-chat-selected">

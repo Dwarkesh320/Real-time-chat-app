@@ -9,11 +9,15 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import AudioCall from './components/streming/AudioCall';
 import VideoCall from './components/streming/VideoCall';
 import UserProfile from './components/userProfile';
+
+// enimation loader
+import { FourSquare } from 'react-loading-indicators';
+
 function App() {
   const [user, loading] = useAuthState(auth);
 
   if (loading) {
-    return <div className="loading">Wellcome..</div>;
+    return <div className="loading"><FourSquare color="#31cc71" size="large" text="" textColor="" speedPlus="0" /></div>;
   }
 
   return (

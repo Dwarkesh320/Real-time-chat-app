@@ -47,6 +47,7 @@ function ChatInput({ selectedChat }) {
         placeholder={selectedChat ? `Message ${selectedChat.displayName}` : 'Select a user to chat'}
         disabled={!selectedChat}
       />
+       
       <button type="submit" disabled={!selectedChat || !message.trim()}>Send</button>
     </form>
   );

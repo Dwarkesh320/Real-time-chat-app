@@ -1,11 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import { createRequire } from 'module'
+//import { createRequire } from 'module'
 
 
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),
     tailwindcss(),
@@ -26,6 +25,9 @@ export default defineConfig({
     port: 3000,
     open: true,
     strictPort: true,
+  },
+   build: {
+    outDir: "build", 
   },
 }
 )

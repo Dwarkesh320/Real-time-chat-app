@@ -1,16 +1,15 @@
-/* ChatRoom.css */
 
 /* Base styles */
-.chat-room {
+ .chat-room {
   display: flex;
   flex-direction: column;
   height: 100vh;
   background-color: #1d1f1f;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} 
 
 /* Header styles */
-.chat-header {
+ .chat-header {
   background-color: #075e54;
   color: white;
   padding: 15px 20px;
@@ -18,18 +17,18 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+} 
 
 .chat-header h1 {
   margin: 0;
   font-size: 1.5rem;
-}
-
+} 
+ 
 .user-info {
   display: flex;
   align-items: center;
   gap: 15px;
-}
+} 
 
 .logout-btn {
   background-color: #128c7e;
@@ -43,28 +42,28 @@
   align-items: center;
   width: 60px ;
   height: 40px;
-}
+} 
 
 .logout-btn:hover {
   background-color: #0d7a6e;
   color: aqua;
-}
+} 
 
 /* Main container layout */
-.chat-container {
+ .chat-container {
   display: flex;
   flex: 1;
   overflow: hidden;
-}
+} 
 
 /* Sidebar styles */
-.sidebar {
+ .sidebar {
   width: 295px;
   background-color: white;
   border-right: 1px solid #e0e0e0;
   display: flex;
   flex-direction: column;
-}
+} 
 
 .sidebar-tabs {
   display: flex;
@@ -89,7 +88,7 @@
 
 .sidebar-tabs button:hover {
    background-color: #f0f0f0; 
-}
+} 
 
 /* Chat main area styles */
 .chat-main {
@@ -118,9 +117,9 @@
   padding: 5px 10px;
   background-color: #075e54;
   
-}
+} 
 /* Chat header with user info */
-.chat-user-header {
+ .chat-user-header {
   background-color: #075e54;
   color: white;
   padding: 15px 20px;
@@ -142,10 +141,10 @@
   font-size: 0.9rem;
   font-style: italic;
   color: #e0e0e0;
-}
+} 
 
 /* Message form styles */
-.message-form {
+ .message-form {
   display: flex;
   padding: 15px;
   background-color: #f0f0f0;
@@ -159,38 +158,36 @@
   border-radius: 20px;
   outline: none;
   font-size: 1rem;
-}
-
+} 
+ 
 .message-form button {
-  margin-left: 10px;
-  padding: 0 20px;
-  background-color: #075e54;
-  color: white;
+  
+  padding: 0 13px;
+  
+  color: #007bff;
+  height: 40px;
   border: none;
-  border-radius: 20px;
+  
   cursor: pointer;
-  transition: background-color 0.3s;
-}
+  transition:  0.3s;
+} 
 
-.message-form button:hover {
-  background-color: #128c7e;
-}
 
 /* Scrollable areas */
-.UserList, .ChatList, .ChatMessages {
+ .UserList, .ChatList, .ChatMessages {
   overflow-y: auto;
   flex: 1;
-}
+} 
 
 /* User list item styles */
-.user-item {
+ .user-item {
   padding: 15px;
   border-bottom: 1px solid #e0e0e0;
   cursor: pointer;
   transition: background-color 0.3s;
   display: flex;
   align-items: center;
-}
+} 
 
 .user-item:hover {
   background-color: #f5f5f5;
@@ -215,14 +212,14 @@
 
 .user-name {
   font-weight: 500px;
-}
+} 
 
 /* Message styles */
-.message-container {
+ .message-container {
   padding: 20px;
   display: flex;
   flex-direction: column;
-}
+} 
 
 .message {
   max-width: 70%;
@@ -265,10 +262,10 @@
   color: #666;
   text-align: right;
   margin-top: 3px;
-}
+} 
 
 /* Chat list styles */
-.chat-item {
+ .chat-item {
   padding: 15px;
   border-bottom: 1px solid #e0e0e0;
   cursor: pointer;
@@ -304,10 +301,10 @@
 .chat-time {
   font-size: 0.8rem;
   color: #888;
-}
+} 
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .sidebar {
     width: 250px;
   }
@@ -334,4 +331,52 @@
     width: 100%;
   }
 }
+ 
 
+
+
+
+
+.message-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.emoji-button {
+ 
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #666;
+  padding: 8px;
+}
+
+.emoji-picker-wrapper {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  z-index: 100;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.message-form input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+.message-form button[type="submit"] {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #007bff;
+  padding: 8px;
+} 
